@@ -1,0 +1,8 @@
+<!-- # this is for views/posts/show.html.erb -->
+<div>
+  <h3><%= @post.title %></h3>
+</div>
+<div>
+  <%= link_to "Back", posts_path %>
+  <%= link_to "Delete", post_path(@post), method: :delete %>
+</div>
